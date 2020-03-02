@@ -1,6 +1,13 @@
-@import url("riceExtension/nord.css");
+/* Github: https://github.com/jeremyperkin/FireFox-uBo-rice ************************************/
+/****************************************************************************************/
+
+@import url("riceExtension/nord.css"); /*created folder riceExtension to house my Nord theme.*/
+/*If you want to use your own colors just mod this file and rename it to a "name of your choice".css*/
+/*change the IMPORT name (nord.css in this example) to the color theme your have made*/
+
 
 :root {
+  /*Below colors are for Firefox Rice | theme */
   --accent:              var(--nordf-2);
   --background:          var(--nordp-0);
   --background-bar:      var(--background);
@@ -8,6 +15,7 @@
   --foreground:          var(--nords-0);
   --tab-icon-background: var(--norda-1);
   --newtab-background-color: var(--background);
+  
   /*polar*/
   --nordp-0:  #2E3440;
   --nordp-1:  #3B4253;
@@ -23,34 +31,14 @@
   --nordf-2:  #81A1C1;
   --nordf-3:  #5E81AC;
   --nordf-4:  #8ad;
-
   /*aurora*/
   --norda-0:  #BF616A;
   --norda-1:  #D08770;
   --norda-2:  #EBCB8B;
   --norda-3:  #A3Be8C;
   --norda-4:  #B48EAD;
-  /*testing out variable names*/
-  --window: #434C5E;
-  --base: #3b4252;
-  --alt-base: #2E353D78;
-  --button-color: #3c4454;
-  --light: #2e3440;
-  --mid-light: #2e3440;
-  --dark: #2e3440;
-  --mid: #2e3440;
-  --highlight: #4c566a;
-  --inactive-highlight: #4c566a;
-  --text: #d8dee9;
-  --window-text: #d8dee9;
-  --button-text: #d8dee9;
-  --disabled-text: #d8dee978;
-  --tooltip-text: #d8dee9;
-  --highlight-text: #d8dee9;
-  --link: #646464;
-  --link-visited: #7f8c8d;
-  --progress-indicator-text: #d8dee9; 
-
+  
+  /*This is here to show you which colors where used with which variable - Feel free to use your own*/
   /*uBo 
   --uBo-bg:                            var(--nordp-0); /* body 
   --uBo-text:                          var(--nords-1); /* body 
@@ -88,6 +76,8 @@
   --diff-textarea-bg:                  var(--nordp-3);
   --diff-textarea-text:                var(--nords-1);
 */
+  /*These are the variable names I have given to the userContent.css section for uBo*/
+  /*Best to not change them - this way you can just make your own theme easily*/
   --uBo-bg:                            var(--bg);
   --uBo-text:                          var(--main-text);
   --logdialog-bg:                      var(--bg2);
