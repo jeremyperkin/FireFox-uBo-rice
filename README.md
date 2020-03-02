@@ -16,8 +16,6 @@ See screenshots below for a preview.
 
 ![Screenshot](/screenshots/Screenshot_2020-03-02-47_1371x564.png)
 
-![Screenshot](screenshots/Screenshot_2020-03-02-50_1088x1062.png)
-
 ![Screenshot](screenshots/Screenshot_2020-03-02-41_1497x622.png)
 
 
