@@ -1,3 +1,5 @@
+/* Github: https://github.com/jeremyperkin/FireFox-uBo-rice ************************************/
+/***********************************************************************************************/
 
 :root {
   --accent:         #8ad;
@@ -24,8 +26,8 @@
   --icon1:          #3B4253;
 
 
-/*Available Colors for Nord theme. Feel free to add*/
-
+/*Available Colors for Nord theme. Feel free use them in the above*/
+ 
   /*polar*/
   --nordp-0:  #2E3440;
   --nordp-1:  #3B4253;
