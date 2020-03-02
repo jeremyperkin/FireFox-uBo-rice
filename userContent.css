@@ -1,11 +1,19 @@
+/*Either use this file as your userContent.css file or paste the below into your userContent.css file*/
+/*NOTE: If pasting code - MAKE SURE to have the import file at the above any code you have on the page*/
+/*As shown below*/
+
+/* Github: https://github.com/jeremyperkin/FireFox-uBo-rice ************************************/
+/***********************************************************************************************/
+
+
 @import url("colors.css") /*firefox theme colors*/;
 
 
 
 
-
+/*IMPORTANT: change the Internal UUID*/
 /* uBlock Origin Color change*/
-@-moz-document url-prefix("moz-extension://8ef0eddb-498d-43d9-8d2d-5f5de9f79224/") {
+@-moz-document url-prefix("moz-extension://YOUR INTERNAL UUID FOR UBLOCK EXTENSION/")/* found by going here about:debugging#/runtime/this-firefox*/ {
 	body { background-color: var(--uBo-bg) !important; color: var(--uBo-text) !important; }
 	a { color: var(--a) !important; }
 	h2 { background-color: var(--h2)  !important; color: var(--h2-text) !important; }
