@@ -6,45 +6,169 @@
 /***********************************************************************************************/
 
 
-@import url("colors.css") /*firefox theme colors*/;
+:root {
+    --light-gray-10: #f9f9fb;
+    --light-gray-10-a4: #f9f9fb0a;
+    --light-gray-10-a12: #f9f9fb1f;
+    --light-gray-10-a16: #f9f9fb29;
+    --light-gray-20: #f0f0f4;
+    --light-gray-30: #e0e0e6;
+    --light-gray-30-a50: #e0e0e680;
+    --light-gray-40: #cfcfd8;
+    --light-gray-50: #bfbfc9;
+    --light-gray-60: #afafba;
+    --light-gray-70: #9f9fad;
+    --light-gray-90: #80808f;
+
+    --dark-gray-30: #42414d;
+    --dark-gray-50: #32313c;
+    --dark-gray-80: #1c1b22;
+    --dark-gray-90: #15141a;
+
+    --red-60: #e22850;
+    --violet-40: #ab71ff;
+    --violet-70: #592acb;
+    --violet-80: #45278d;
+
+
+    --default-ink: var(--light-gray-10);
+    --default-ink-a4: var(--light-gray-10-a4);
+    --default-ink-a50: var(--light-gray-30-a50);
+    --default-surface: var(--dark-gray-90);
+    --default-surface-hover: var(--dark-gray-50);
+    --bg-1: hsla(250, 13%, 9%, 1);
+    --bg-1-border: hsla(250, 13%, 16%, 1);
+    --bg-overlay-50: #0008;
+    --bg-code: hsla(0, 2%, 0%, 0.8);
+    --fg-0-80: hsla(0, 0%, 53%, 0.8);
+    --fg-0-70: hsla(0, 0%, 53%, 0.7);
+    --fg-0-60: hsla(0, 0%, 53%, 0.6);
+    --fg-0-50: hsla(0, 0%, 53%, 0.5);
+    --fg-0-40: hsla(0, 0%, 53%, 0.4);
+    --fg-0-30: hsla(0, 0%, 53%, 0.3);
+    --fg-0-20: hsla(0, 0%, 53%, 0.2);
+    --link-ink: #bb86fc;
+    --fieldset-header-surface: transparent;
+    --fieldset-header-ink: var(--light-gray-30);
+    --hor-separator-color: var(--dark-gray-50);
+    --button-surface: var(--light-gray-10-a12);
+    --button-ink: var(--default-ink);
+    --button-surface-hover: var(--light-gray-10-a12);
+    --button-active-surface: var(--light-gray-70);
+    --button-important-surface: var(--dark-gray-30);
+    --button-important-surface-hover: var(--light-gray-60);
+    --button-disabled-filter: opacity(38%);
+    --button-disabled-surface: var(--dark-gray-50);
+    --button-disabled-ink: var(--light-gray-30-a50);
+    --button-preferred-surface: var(--dark-gray-50);
+    --button-preferred-ink: var(--light-gray-70);
+    --checkbox-size: calc(var(--font-size) + 2px);
+    --checkbox-ink: var(--default-ink);
+    --checkbox-checked-ink: #bb86fc;
+  /*--select-surface:*/
+    --bg-transient-notice: var(--dark-gray-50);
+    --dashboard-bar-shadow: 0px 0px 0px 1px var(--default-ink-a4);
+    --dashboard-tab-active-ink: #bb86fc;
+    --dashboard-tab-surface-hover: var(--default-surface-hover);
+    --fg-icon-info-lvl-0-dimmed: #888;
+    --fg-icon-info-lvl-0: inherit;
+    --fg-icon-info-lvl-1-dimmed: hsla(258, 57%, 35%, 1);
+    --fg-icon-info-lvl-1: hsla(258, 66%, 48%, 1);
+    --info-lvl-2-ink: var(--yellow-50);
+    --info-lvl-2-ink-hover: var(--yellow-60);
+    --fg-icon-info-lvl-3-dimmed: hsla(16, 100%, 50%, 0.5);
+    --fg-icon-info-lvl-3: hsla(16, 100%, 50%, 1);
+    --fg-icon-info-lvl-4-dimmed: hsla(0, 100%, 35%, 0.5);
+    --fg-icon-info-lvl-4: hsla(0, 100%, 35%, 1);
+    --large-icon-info-lvl-2: hsla(41, 100%, 47%, 1);
+    --bg-tooltip: var(--dark-gray-50);
+    --fg-tooltip: var(--light-gray-30);
+    --bg-popup-cell-1: var(--dark-gray-50);
+    --popup-power-ink: var(--violet-70);
+    --popup-power-disabled-ink: var(--light-gray-60);
+    --popup-power-ink-hover: var(--dark-gray-30);
+    --bg-popup-cell-2: var(--dark-gray-50);
+    --bg-popup-cell-label-filter: opacity(40%);
+    --fg-popup-cell-cname: hsla(0, 0%, 53%, 0.3);
+    --bg-popup-cell-allow: hsla(120, 40%, 75%, 1);
+    --bg-popup-cell-allow-own: hsla(120, 100%, 30%, 1);
+    --bg-popup-cell-noop: hsla(0, 0%, 75%, 1);
+    --bg-popup-cell-noop-own: hsla(0, 0%, 45%, 1);
+    --bg-popup-cell-block: hsla(0, 50%, 80%, 1);
+    --bg-popup-cell-block-own: hsla(0, 100%, 40%, 1);
+    --bg-popup-cell-label-mixed: hsla(45, 100%, 38%, 1);
+    --popup-icon-x-ink: #e22850;
 
 
 
-
-/*IMPORTANT: change the Internal UUID*/
-/* uBlock Origin Color change*/
-@-moz-document url-prefix("moz-extension://YOUR INTERNAL UUID FOR UBLOCK EXTENSION/")/* found by going here about:debugging#/runtime/this-firefox*/ {
-	body { background-color: var(--uBo-bg) !important; color: var(--uBo-text) !important; }
-	a { color: var(--a) !important; }
-	h2 { background-color: var(--h2)  !important; color: var(--h2-text) !important; }
-	code { background-color: var(--code) !important; }
-	#switch .fa-icon { fill: var(--switch-fa-on) !important; }
-	body.off #switch .fa-icon { fill: var(--switch-fa-off)!important; }
-	.tool { color: var(--tool) !important; }
-	.tool.enabled:hover { fill: var(--tool-enable-hover) !important; }
-	html#ublock0-epicker, #ublock0-epicker body {background: transparent !important; color: var(--h2-text)!important;}
-	#ublock0-epicker aside {background-color: var(--uBo-bg)!important;}
-	.permatoolbar { background-color: var(--permatoolbar-bg) !important; }
-	.permatoolbar .button { background-color: var(--permatoolbar-button) !important; }
-	.permatoolbar .button:hover { background-color: var(--permatoolbar-button-hover) !important; }
-	#tooltip { display: none}/*{ background-color: var(--tooltip-bg) !important; border: 1px solid var(--border-fw) !important; color: var(--tooltip-text) !important; }*/
-	#firewallContainer > div { background-color: var(--fw-bg) !important; }
-	#firewallContainer > div:hover { background-color: var(--fw-hover) !important; }
-	#firewallContainer > div > span { color: var(--bg) !important; border-bottom: 1px solid var(--borders-fw) !important; }
-	#firewallContainer > div > span:first-of-type ~ span { border-left: 1px solid var(--borders-fw) !important; }
-	#extraTools { background-color: var(--extraTools-bg) !important; }
-	#extraTools > span:hover { fill: var(--extraTool-spanhover) !important; }
-	#dashboard-nav-widgets { background-color: var(--dash-nav-widgets) !important; border-bottom: 1px solid var(--dash-borders) !important; }
-	.tabButton { background-color: var(--tabbutton) !important; border: 1px solid var(--tab-borders) !important; border-bottom: 1px solid var(--tab-borders) !important; color: var(--tabbutton-text) !important; }
-	.tabButton.selected { background-color: var(--tab-select) !important; border-bottom: 1px solid var(--borders-fw) !important; }
-	#diff li { background-color: var(--diffli-bg) !important; }
-	#diff li:nth-child(even) { background-color: var(--diffli-nth-bg) !important; }
-	#diff textarea { background-color: var(--diff-textarea-bg) !important; color: var(--diff-textarea-text) !important; } 
-	#loggerSettingsDialog,
-	#modalOverlayContainer,
-	#netFilteringDialog,
-	#netFilteringDialog > .panes > .details > div,
-	#netFilteringDialog > div.panes > .dynamic .row {background-color: var(--logdialog-bg) !important;}
-	#domTree { color: var(--dark-text)!important}
-}
-
+   --font-size: 12px;
+   --default-ink: var(--light-gray-10); /*default font color for most of the text in uBo*/
+   --default-ink-a4: var(--light-gray-10-a4);
+   --default-ink-a50: #e0e0e680 !important; /*icon fill color for saveRules, revertRules and refresh*/
+   --default-surface: #15141a !important; /*deals with most white full screen backgrounds like Logger Ui, settings, about*/ /*used for checkmark color stoke*/
+   --default-surface-hover: #32313c !important; /*highlight color for popup app and dashboard tabs*/
+   --bg-1: hsla(250, 13%, 9%, 1) !important; /* color of the ribbon across screen where the search bar is in My Filters*/
+   --bg-1-border: hsla(250, 13%, 16%, 1) !important;
+   --bg-overlay-50: #0008 !important;
+   --bg-code: hsla(0, 2%, 0%, 0.8) !important;
+   --fg-0-80: hsla(0, 0%, 53%, 0.8) !important;
+   --fg-0-70: hsla(0, 0%, 53%, 0.7) !important; /*uBo popup logger version lines for domains and requests*/
+   --fg-0-60: hsla(0, 0%, 53%, 0.6) !important; /*used for the number of filters in use in Filter Lists section | My Rules filter icon */
+   --fg-0-50: hsla(0, 0%, 53%, 0.5) !important; /*uBo popup logger version refresh button*/
+   --fg-0-40: hsla(0, 0%, 53%, 0.4) !important; /*Extra Tools bar in uBo popup logger version*/
+   --fg-0-30: hsla(0, 0%, 53%, 0.3) !important;
+   --fg-0-20: hsla(0, 0%, 53%, 0.2) !important;
+   --link-ink:  #80808f !important; /*web link color*/
+   --fieldset-header-surface: transparent;
+   --fieldset-header-ink: #e0e0e680!important; /*used in settings for Privacy Default behavior, used in My Rules for Perma and Temp Rules Headers*/
+   --hor-separator-color: #15141a !important;
+   --button-surface: #42414d !important; /*affects Firewall container rows on uBo main panel*/
+   --button-ink: #1c1b22 !important; /*color of text and icon inside button*/ /*applied to My Filters tab*/
+   --button-surface-hover: #afafba !important;
+   --button-active-surface:#9f9fad!important;
+   --button-important-surface: #42414d !important;
+   --button-important-surface-hover: #afafba !important;
+   --button-disabled-filter: opacity(38%);
+   --button-disabled-surface: #32313c !important;
+   --button-disabled-ink: #e0e0e680 !important;
+   --button-preferred-surface: #32313c !important;
+   --button-preferred-ink: #9f9fad !important;
+   --checkbox-size: calc(var(--font-size) + 2px);
+   --checkbox-ink: #80808f; /*non-checked box border color*/
+   --checkbox-checked-ink: #42414d !important; /*used for the checkmark - uses background-color and border-color*/
+   --select-surface: #D08770 !important;
+   --bg-transient-notice: #32313c !important; /*color for the buttons for saveRules, revertRules and refresh - popup container*/
+   --dashboard-bar-shadow: 0px 0px 0px 1px var(--default-ink-a4) !important;
+   --dashboard-tab-ink: var(--default-ink);
+   --dashboard-tab-active-ink: #ab71ff !important;
+    --dashboard-tab-surface-hover: var(--default-surface-hover);
+  /* small i icons found throughout the dashboard and logger*/
+   --fg-icon-info-lvl-0-dimmed: #888 !important; /*found in My Rules/Setting tabs*/
+   --fg-icon-info-lvl-0: inherit;
+   --fg-icon-info-lvl-1-dimmed: hsla(258, 57%, 35%, 1) !important; /*found in  Filter Lists tab - default view*/
+   --fg-icon-info-lvl-1: hsla(258, 66%, 48%, 1) !important; /* found in Filter Lists tab - hovered over*/
+   --info-lvl-2-ink: var(--yellow-50);
+   --info-lvl-2-ink-hover: var(--yellow-60);
+   --fg-icon-info-lvl-3-dimmed: hsla(16, 100%, 50%, 0.5);/*found in Advanced Settings - default view*/
+   --fg-icon-info-lvl-3: hsla(16, 100%, 50%, 1); /*found in Advanced Settings - hovered over*/
+   --fg-icon-info-lvl-4-dimmed: hsla(0, 100%, 35%, 0.5);
+   --fg-icon-info-lvl-4: hsla(0, 100%, 35%, 1);
+   --large-icon-info-lvl-2: hsla(41, 100%, 47%, 1);
+  /**************************************************************/
+   --bg-tooltip: #32313c !important;
+   --fg-tooltip: #e0e0e6 !important;
+   --bg-popup-cell-1: #32313c!important; /*uBo popup window accesible from logger*/
+   --popup-power-ink: #592acb !important; /*uBo power icon - on color */
+   --popup-power-disabled-ink: #afafba!important; /*uBo power icon - off color */
+   --popup-power-ink-hover: #42414d !important;
+   --bg-popup-cell-2:#42414d !important; /*firewall container row line horizontal and vertical colours*/
+   --bg-popup-cell-label-filter: opacity(40%);
+   --fg-popup-cell-cname: hsla(0, 0%, 53%, 0.3) !important;
+   --bg-popup-cell-allow: hsla(120, 40%, 75%, 1);
+   --bg-popup-cell-allow-own: hsla(120, 100%, 30%, 1);
+   --bg-popup-cell-noop: hsla(0, 0%, 75%, 1);
+   --bg-popup-cell-noop-own: hsla(0, 0%, 45%, 1);
+   --bg-popup-cell-block: hsla(0, 50%, 80%, 1);
+   --bg-popup-cell-block-own: hsla(0, 100%, 40%, 1);
+   --bg-popup-cell-label-mixed: #42414d !important;
+   --popup-icon-x-ink: #e22850 !important;
