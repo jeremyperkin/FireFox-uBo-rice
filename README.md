@@ -1,5 +1,7 @@
-# FireFox-uBo-rice
-This will assist you in creating your own dark or color theme for uBlock Origin.  Or really any extension.  As long as you get the Internet UUID and sift through the elements and selectors.  
+# u-Block Origin-rice
+This will assist you in creating your own dark or color theme for uBlock Origin.  
+
+The theme changing is even easier.... just paste the contents of userContent.css into your already used userContent.css
 
 I will be adding other themes to the /riceExtension folder at a later time.
 
