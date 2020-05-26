@@ -3,7 +3,7 @@
 
 This will assist you in creating your own dark or color theme for uBlock Origin.  
 
-The theme changing is even easier.... just paste the contents of colors.css into your colors.css file
+The theme changing is even easier.... just paste the contents of colors.css into your CSS file which has your colors.  (some have a seperate colors.css as seen here.  Others put it in userContent.css.  BEST PRACTIVE put this in COLORS.CSS
 
 NOTE: There are a few changes that might be made later with this.  Currently working and Tested.  
 
