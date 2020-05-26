@@ -1,21 +1,48 @@
 /* Github: https://github.com/jeremyperkin/FireFox-uBo-rice ************************************/
 /****************************************************************************************/
 
-@import url("riceExtension/nord.css"); /*created folder riceExtension to house my Nord theme.*/
-/*If you want to use your own colors just mod this file and rename it to a "name of your choice".css*/
-/*change the IMPORT name (nord.css in this example) to the color theme your have made*/
-
-
 :root {
-  /*Below colors are for Firefox Rice | theme */
+  --accent:         #8ad;
+  --bg:             #2E3440;
+  --bg2:            #2E3440;
+  --bgbar:          #434c5E;
+  --bgbar2:         #3B4253;
+  --bgbar-hov:      #8ad;
+  --bg-fw:          #3B4253;
+  --bg-fwhov:       #434c5E;
+  --bg-fwspan:      #2E3440;     
+  --dashbg:         #2E3440;
+  --main-text:      #E5E9F0;  
+  --light-text:     #ECEFF4;
+  --dark-text:      #2E3440;
+  --dark-text2:     #4C566A;
+  --on:             #A3BE8C;
+  --off:            #BF616A;  
+  --button:         #4C566A;
+  --button-hov:     #5E81AC;
+  --button-a:       #3B4253;
+  --border:         #2E3440;
+  --border2:        #2E3440;
+  --icon1-low:      #3B4253;
+  --icon2-high:     #4C566A;
+  --inactivebutton: #3B4253;
+  --importantbutton: #434c5e;
+  --importanthover:   #5E81AC;
+  --disabledbutton:  #3B4253;
+  --button-pre-surf: #384253; 
+
   --accent:              var(--nordf-2);
-  --background:          var(--nordp-0);
-  --background-bar:      var(--background);
-  --blank-background:    var(--background);
+  --backgroundbg:        var(--nordp-0);
+  --background-bar:      var(--backgroundbg);
+  --blank-background:    var(--backgroundbg);
   --foreground:          var(--nords-0);
-  --tab-icon-background: var(--norda-1);
-  --newtab-background-color: var(--background);
-  
+  --tab-icon-background: #592acb;
+  --newtab-background-color: var(--backgroundbg);
+  --lwt-accent-color: var(--nordp-0) !important;
+  --lwt-sidebar-background-color: var(--backgroundbg);
+  --lwt-sidebar-text-color: var(--foreground);
+  --ytd-searchbox-legacy-border-color: var(--backgroundbg)!important;
+  --ytd-searchbox-legacy-button-border-color: var(--backgroundbg)!important;
   /*polar*/
   --nordp-0:  #2E3440;
   --nordp-1:  #3B4253;
@@ -31,87 +58,81 @@
   --nordf-2:  #81A1C1;
   --nordf-3:  #5E81AC;
   --nordf-4:  #8ad;
+
   /*aurora*/
   --norda-0:  #BF616A;
   --norda-1:  #D08770;
   --norda-2:  #EBCB8B;
   --norda-3:  #A3Be8C;
   --norda-4:  #B48EAD;
-  
-  /*This is here to show you which colors where used with which variable - Feel free to use your own*/
-  /*uBo 
-  --uBo-bg:                            var(--nordp-0); /* body 
-  --uBo-text:                          var(--nords-1); /* body 
-  --logdialog-bg:                      var(--nordp-0);
-  --logdialog-text:                    var(--nords-1);
-  --netfilt-bg:                        var(--nordp-0);
-  --netfilt-text:                      var(--nordp-0);
-  --h2:                                var(--nordp-0);
-  --h2-text:                           var(--nords-2);
-  --a:                                 var(--nordf-4);
-  --code:                              var(--nords-2);
-  --switch-fa-on:                      var(--norda-3);
-  --switch-fa-off:                     var(--norda-0);
-  --tool:                              var(--nordp-1);
-  --tool-enabled-hover:                var(--nordf-4);
-  --permatoolbar-bg:                   var(--nordp-2);
-  --permatoolbar-button:               var(--nordp-3);
-  --permatoolbar-button-hover:         var(--nordf-3);
-  --tooltip-bg:                        var(--nords-0);                         
-  --tooltip-text:                      var(--nordp-0);
-  --fw-bg:                             var(--nordp-1);
-  --fw-hover:                          var(--nordp-2);
-  --fw-span:                           var(--nordp-0);
-  --borders-fw:                        var(--nordp-0);
-  --extraTools-bg:                     var(--nordp-1);
-  --extraTools-spanhover:              var(--nordf-4);
-  --dash-nav-widgets:                  var(--nordp-0);
-  --dash-borders:                      var(--nords-0);
-  --tabbutton:                         var(--nordp-3);
-  --tab-select:                        var(--nordp-0);
-  --tabbutton-text:                    var(--nords-2);
-  --tab-borders:                       var(--nords-0);
-  --diffli-bg:                         var(--nordp-1);
-  --diffli-nth-bg:                     var(--nordp-0);
-  --diff-textarea-bg:                  var(--nordp-3);
-  --diff-textarea-text:                var(--nords-1);
-*/
-  /*These are the variable names I have given to the userContent.css section for uBo*/
-  /*Best to not change them - this way you can just make your own theme easily*/
-  --uBo-bg:                            var(--bg);
-  --uBo-text:                          var(--main-text);
-  --logdialog-bg:                      var(--bg2);
-  --logdialog-text:                    var(--main-text);
-  --netfilt-bg:                        var(--bg2);
-  --netfilt-text:                      var(--dark-text);                   
-  --h2:                                var(--dark-text);
-  --h2-text:                           var(--main-text);
-  --a:                                 var(--accent);
-  --code:                              var(--light-text);
-  --switch-fa-on:                      var(--on);
-  --switch-fa-off:                     var(--off);
-  --tool:                              var(--icon1);
-  --tool-enabled-hover:                var(--accent);
-  --permatoolbar-bg:                   var(--bgbar);
-  --permatoolbar-button:               var(--button);
-  --permatoolbar-button-hover:         var(--button-hov);
-  --tooltip-bg:                        var(--bg);               
-  --tooltip-text:                      var(--dark-text); 
-  --firewallcontainer-bg:              var(--bg-fw);
-  --firewallcontainer-hover:           var(--nords-0);
-  --firewallcontainer-span:            var(--nords-1);
-  --borders-fw:                        var(--border);
-  --extraTools-bg:                     var(--bgbar2);
-  --extraTools-spanhover:              var(--bgbar2-hov);
-  --dashboard-nav-widgets:             var(--dashbg);
-  --dashboard-borders:                 var(--border2);
-  --tabbutton:                         var(--button2);
-  --tab-select:                        var(--button-a);
-  --tabbutton-text:                    var(--light-text);
-  --tab-borders:                       var(--border3);
-  --diffli-bg:                         var(--bg2);
-  --diffli-nth-bg:                     var(--bg);
-  --diff-textarea-bg:                  var(--dark-text2);
-  --diff-textarea-text:                var(--light-text);
 
+    --default-ink: var(--main-text) !important;
+    --default-ink-a4: var(--light-text) !important;
+    --default-ink-a50: var(--dark-text2) !important;
+    --default-surface: var(--bg) !important;
+    --default-surface-hover: var(--button-hover) !important;
+    --bg-1: var(--bg2) !important;
+    --bg-1-border: var(--border) !important;
+    --bg-overlay-50: var(--bg) !important;
+    --bg-code: var(--bg)!important;
+    --fg-0-80: hsla(0, 0%, 53%, 0.8);
+    --fg-0-70: hsla(0, 0%, 53%, 0.7);
+    --fg-0-60: hsla(0, 0%, 53%, 0.6);
+    --fg-0-50: hsla(0, 0%, 53%, 0.5);
+    --fg-0-40: hsla(0, 0%, 53%, 0.4);
+    --fg-0-30: hsla(0, 0%, 53%, 0.3);
+    --fg-0-20: hsla(0, 0%, 53%, 0.2);
+    --link-ink: var(--accent) !important;
+    --fieldset-header-surface: transparent;
+    --fieldset-header-ink: var(--light-text) !important;
+    --hor-separator-color: transparent !important;
+    --button-surface: var(--button) !important;
+    --button-ink: var(--main-text) !important;
+    --button-surface-hover: var(--button-hov) !important;
+    --button-active-surface: var(--inactivebutton) !important;
+    --button-important-surface: var(--importantbutton) !important;
+    --button-important-surface-hover: var(-importanthover) !important;
+    --button-disabled-filter: opacity(38%) !important;
+    --button-disabled-surface: var(--disabledbutton) !important;
+    --button-disabled-ink: var(--main-text) !important;
+    --button-preferred-surface: var(--button-pre-surf) !important;
+    --button-preferred-ink: var(--light-text) !important;
+    --checkbox-size: calc(var(--font-size) + 2px);
+    --checkbox-ink: var(--default-ink) !important;
+    --checkbox-checked-ink: var(--accent) !important;
+    /*--select-surface:*/
+    --bg-transient-notice: var(--bgbar2) !important;
+    --dashboard-bar-shadow: 0px 0px 0px 1px var(--dark-text) !important;
+    --dashboard-tab-active-ink: var(--main-text) !important;
+    --dashboard-tab-surface-hover: var(--bgbar-hov) !important;
+    --fg-icon-info-lvl-0-dimmed: #888;
+    --fg-icon-info-lvl-0: inherit;
+    --fg-icon-info-lvl-1-dimmed: var(--icon1-low) !important;
+    --fg-icon-info-lvl-1: var(--icon2-high !important);
+    --info-lvl-2-ink: var(--yellow-50);
+    --info-lvl-2-ink-hover: var(--yellow-60);
+    --fg-icon-info-lvl-3-dimmed: hsla(16, 100%, 50%, 0.5);
+    --fg-icon-info-lvl-3: hsla(16, 100%, 50%, 1);
+    --fg-icon-info-lvl-4-dimmed: hsla(0, 100%, 35%, 0.5);
+    --fg-icon-info-lvl-4: hsla(0, 100%, 35%, 1);
+    --large-icon-info-lvl-2: hsla(41, 100%, 47%, 1);
+    --bg-tooltip: var(--bg) !important;
+    --fg-tooltip: var(--dark-text) !important;
+    --bg-popup-cell-1: var(--bg2) !important;
+    --popup-power-ink: var(--on) !important;
+    --popup-power-disabled-ink: var(--off) !important;
+    --popup-power-ink-hover: var(--accent) !important;
+    --bg-popup-cell-2: var(--bg2) !important;
+    --bg-popup-cell-label-filter: opacity(40%);
+    --fg-popup-cell-cname: hsla(0, 0%, 53%, 0.3);
+    --bg-popup-cell-allow: hsla(120, 40%, 75%, 1);
+    --bg-popup-cell-allow-own: hsla(120, 100%, 30%, 1);
+    --bg-popup-cell-noop: hsla(0, 0%, 75%, 1);
+    --bg-popup-cell-noop-own: hsla(0, 0%, 45%, 1);
+    --bg-popup-cell-block: hsla(0, 50%, 80%, 1);
+    --bg-popup-cell-block-own: hsla(0, 100%, 40%, 1);
+    --bg-popup-cell-label-mixed: hsla(45, 100%, 38%, 1);
+    --popup-icon-x-ink: #e22850; 
 }
+
+#cloudWidget {background: var(--bg) !important}
