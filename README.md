@@ -1,11 +1,13 @@
-# u-Block Origin-rice
+# u-Block Origin v 1.27.6
+
+
 This will assist you in creating your own dark or color theme for uBlock Origin.  
 
-The theme changing is even easier.... just paste the contents of userContent.css into your already used userContent.css
+The theme changing is even easier.... just paste the contents of colors.css into your colors.css file
 
-I will be adding other themes to the /riceExtension folder at a later time.
+NOTE: There are a few changes that might be made later with this.  Currently working and Tested.  
 
-See screenshots below for a preview.
+See screenshots below for a preview OUT OF DATE
 ![Screenshot](screenshots/Screenshot_2020-03-02-15_618x1234.png)
 
 ![Screenshot](screenshots/Screenshot_2020-03-02-50_1088x1062.png)
