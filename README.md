@@ -1,4 +1,4 @@
-# u-Block Origin v 1.27.6
+# u-Block Origin v 1.27.10
 
 
 This will assist you in creating your own dark or color theme for uBlock Origin.  
