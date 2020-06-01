@@ -7,7 +7,7 @@ The theme changing is even easier.... just paste the contents of colors.css into
 
 NOTE: There are a few changes that might be made later with this.  Currently working and Tested.  
 
-<a href="https://www.buymeacoffee.com/v0id" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee" style="height: 20px !important;width: 80px !important;" ></a>
+<a href="https://www.buymeacoffee.com/v0id" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-violet.png" alt="Buy Me A Coffee" style="height: 10px !important;width: 45px !important;" ></a>
 
 See screenshots below for a preview OUT OF DATE
 ![Screenshot](screenshots/Screenshot_2020-03-02-15_618x1234.png)
