@@ -7,4 +7,145 @@
 
 @import url("colors.css");
 
-?*****NOTE IF YOU ALREADY HABE THIS FILE AND HAVE A COLORS.CSS FILE YOU WILL ONLY NEED THE COLORS.CSS FILE*******/
+/****CodeMirror.css****/
+.CodeMirror-activeline-background /*line 151*/ {
+    background: var(--default-surface-hover) 
+}  /***Might need to change the colour hear...***/
+
+#advancedSettings {
+	color: var(--default-ink) }
+	
+.CodeMirror {
+	background: var(--default-surface);
+	color: var(--default-ink)
+} 
+.CodeMirror-gutters {
+	background-color: var(--default-surface);
+	border-right: 1px solid var(--dark-gray-50);
+}
+.CodeMirror-merge-gap {
+	background: var(--default-surface);
+	border-left: 1px solid var(--dark-gray-50);
+	border-right: 1px solid var(--dark-gray-50);
+}
+
+
+
+/***LOGGER-UI.CSS***/
+
+
+.permatoolbar .button.active /*line 33*/ {
+    fill: #bb86fc;
+}
+.permatoolbar .button:hover /*line 36*/ {
+	background-color: var(--button-surface-hover);
+}
+#pageSelector /*line 39 Adding*/ {
+    background: var(--dark-gray-50);
+    color: var(--default-ink)
+}
+#popupContainer/*line 447*/, 
+.permatoolbar /*line 14*/, 
+#filterExprPicker /*line 139*/{
+	background:  var(--default-surface);
+}
+#netInspector #filterExprPicker {background-color: var(--dark-gray-50);} /*line 137*/
+
+#netInspector #filterInput > input /*line 124  Add in this*/ {
+    background: var(--dark-gray-50); 
+    color: var(--default-ink)}
+
+#netInspector #filterExprButton:hover, /*line 131*/
+#netInspector #filterExprPicker span[data-filtex]:hover /*line 185*/ {
+    background-color: var(--button-surface-hover)}
+
+#modalOverlayContainer {
+	background-color: var(--dark-gray-50);
+	color: var(--default-ink);}
+/*#netFilteringDialog > div.panes > .dynamic .entry {background-color: #15141a !important; color: #f9f9fa !important border-bottom: 1px solid #45278d !important*/  /*line 737 
+#netFilteringDialog > .panes > .details > div /*line 632/ {background-color: #15141a !important; border-bottom: 1px solid #45278d !important} */ 
+/*{	background-color: #15141a !important;
+	color: #f9f9fb !important;
+	/*border-bottom: 1px solid #45278d !important;
+}*/
+
+/* Line 581*/
+#netFilteringDialog[data-pane="details"] > .headers > [data-pane="details"],
+#netFilteringDialog[data-pane="dynamic"] > .headers > [data-pane="dynamic"], 
+#netFilteringDialog[data-pane="static"] > .headers > [data-pane="static"]
+{
+	background-color: var(--dashboard-tab-active-ink);
+	color: var(--default-ink);
+	border-bottom: 2px solid  var(--dashboard-tab-active-ink)
+}
+#netFilteringDialog > div.panes > .dynamic .entry {
+    background-color: var(--dark-gray-50);
+    color: var(--default-ink)
+}
+
+
+#loggerExportDialog .options span[data-i18n] /*line 906*/ {
+    border: 1px solid var(--dark-gray-50)
+}
+
+#loggerExportDialog .options span[data-i18n]:hover /*line 914*/,
+#loggerExportDialog .options span.on[data-i18n], 
+#loggerExportDialog .options span.pushbutton:active /*line 917*/
+{
+	background-color: var(--dashboard-tab-active-ink);
+}
+#netFilteringDialog,
+#netFilteringDialog > .panes > .details > div,
+#netFilteringDialog > div.panes > .dynamic .row {
+    background-color: var(--dark-gray-50);
+    color: var(--default-ink)}
+
+/*line 506*/ #modalOverlay > div > div:nth-of-type(2):hover,
+#netFilteringDialog > .headers > .tools > span:hover /*line 606*/,
+#filterFinderDialog .filterFinderListEntry a.fa-icon:hover /*line*/,
+#netFilteringDialog > .panes > .details .exceptored .exceptor {
+    background-color: var(--violet-80);
+    }
+
+#loggerSettingsDialog input /*line 954 Add*/ {
+    background: var(--dark-gray-50); 
+    color: var(--default-ink)}
+
+.cm-search-widget-input > input {
+    background: var(--dark-gray-30);
+    color: var(--default-ink)}
+/******dashboard-common.css******
+input[type="number"] /**line 41 ADD** {
+	background-color: #42414d !important;
+	color: #f9f9fa !important;
+}
+/******cloud-ui.css*****/
+#cloudWidget {background:hsl(250, 13%, 9%) !important} /*line 1*/
+
+/****epicker.html****/
+#ublock0-epicker section > div:first-child > textarea { 
+    background-color: var(--dark-gray-50);
+    color: var(--default-ink)}
+#ublock0-epicker button /*line 34*/{
+	background-color: var(--button-surface);
+	color: var(--button-ink);
+ }
+#ublock0-epicker #resultsetCount /*line 92*/ {
+    background-color: var(--button-important-surface); 
+    color: var(--button-ink)}
+#ublock0-epicker button:disabled /*line 45*/ {
+    color: var(--button-disabled-ink); 
+    background-color: var(--button-disabled-surface)}
+#ublock0-epicker #create:not(:disabled) /*line 52*/ {
+    background-color: var(--button-important-surface)}
+#ublock0-epicker body.preview #preview /*line 59*/ {
+    background-color: #bb86fc;}
+#ublock0-epicker aside /*line 174*/ {
+    background-color: var(--default-surface); 
+    border: var(--fg-0-60)}
+#ublock0-epicker ul > li > span:nth-of-type(2) /*line 124*/ {
+    color: var(--default-ink)}
+#ublock0-epicker button:not(:disabled):hover /*line 49*/,
+#ublock0-epicker ul > li > ul > li:hover /*line 140*/ {
+    background-color: var(--default-surface-hover)}
+#ublock0-epicker body /*line 6*/ {color: var(--default-ink) }
